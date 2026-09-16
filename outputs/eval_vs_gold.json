@@ -1,17 +1,16 @@
 {
   "summary": {
     "gold_people": 29,
-    "matched_people": 21,
-    "missing_people": 8,
+    "matched_people": 29,
+    "missing_people": 0,
     "extra_people": 0,
-    "mean_oks": 0.9236,
-    "oks50": 0.7241,
-    "oks75": 0.7241,
+    "mean_oks": 0.9319,
+    "oks50": 1.0,
+    "oks75": 1.0,
     "findings": {
-      "gold_khong_gan_nhan": 48,
-      "co_khac_gold": 36,
-      "thieu_nguoi": 8,
-      "lech_nhe": 7,
+      "gold_khong_gan_nhan": 68,
+      "co_khac_gold": 45,
+      "lech_nhe": 9,
       "nham_nguoi": 2
     }
   },
@@ -21,7 +20,7 @@
       "matches": [
         {
           "gold_person": 1,
-          "your_person": 1,
+          "your_person": 2,
           "oks": 0.885,
           "findings": [
             {
@@ -46,7 +45,7 @@
         },
         {
           "gold_person": 2,
-          "your_person": 2,
+          "your_person": 1,
           "oks": 0.83,
           "findings": [
             {
@@ -599,8 +598,63 @@
       "image": "train_13.jpg",
       "matches": [
         {
-          "gold_person": 2,
+          "gold_person": 1,
           "your_person": 2,
+          "oks": 0.8819,
+          "findings": [
+            {
+              "type": "gold_khong_gan_nhan",
+              "label": "Gold không gán khớp này",
+              "keypoint": "nose",
+              "detail": "Không bị trừ điểm: khớp gold có v=0 bị loại khỏi OKS. Xem mục lưu ý trong README."
+            },
+            {
+              "type": "gold_khong_gan_nhan",
+              "label": "Gold không gán khớp này",
+              "keypoint": "left_eye",
+              "detail": "Không bị trừ điểm: khớp gold có v=0 bị loại khỏi OKS. Xem mục lưu ý trong README."
+            },
+            {
+              "type": "gold_khong_gan_nhan",
+              "label": "Gold không gán khớp này",
+              "keypoint": "right_eye",
+              "detail": "Không bị trừ điểm: khớp gold có v=0 bị loại khỏi OKS. Xem mục lưu ý trong README."
+            },
+            {
+              "type": "gold_khong_gan_nhan",
+              "label": "Gold không gán khớp này",
+              "keypoint": "left_ear",
+              "detail": "Không bị trừ điểm: khớp gold có v=0 bị loại khỏi OKS. Xem mục lưu ý trong README."
+            },
+            {
+              "type": "gold_khong_gan_nhan",
+              "label": "Gold không gán khớp này",
+              "keypoint": "left_elbow",
+              "detail": "Không bị trừ điểm: khớp gold có v=0 bị loại khỏi OKS. Xem mục lưu ý trong README."
+            },
+            {
+              "type": "co_khac_gold",
+              "label": "Cờ khác gold",
+              "keypoint": "right_elbow",
+              "detail": "Vị trí đúng nhưng bạn ghi v=1, gold ghi v=2. Không trừ điểm OKS - nhưng nếu lệch hàng loạt thì guideline chưa thống nhất."
+            },
+            {
+              "type": "gold_khong_gan_nhan",
+              "label": "Gold không gán khớp này",
+              "keypoint": "left_wrist",
+              "detail": "Không bị trừ điểm: khớp gold có v=0 bị loại khỏi OKS. Xem mục lưu ý trong README."
+            },
+            {
+              "type": "lech_nhe",
+              "label": "Lệch nhẹ",
+              "keypoint": "right_wrist",
+              "detail": "Lệch 12 px = 1.0 lần bán kính dung sai. Sửa được, ít hại."
+            }
+          ]
+        },
+        {
+          "gold_person": 2,
+          "your_person": 3,
           "oks": 0.9221,
           "findings": [
             {
@@ -653,21 +707,9 @@
               "detail": "Vị trí đúng nhưng bạn ghi v=2, gold ghi v=1. Không trừ điểm OKS - nhưng nếu lệch hàng loạt thì guideline chưa thống nhất."
             }
           ]
-        },
-        {
-          "gold_person": 1,
-          "your_person": null,
-          "oks": 0.0,
-          "findings": [
-            {
-              "type": "thieu_nguoi",
-              "label": "Thiếu hẳn một người",
-              "detail": "Gold có skeleton này, bài của bạn không có."
-            }
-          ]
         }
       ],
-      "missing": 1,
+      "missing": 0,
       "extra": 0
     },
     {
@@ -744,7 +786,7 @@
       "matches": [
         {
           "gold_person": 1,
-          "your_person": 2,
+          "your_person": 1,
           "oks": 0.8909,
           "findings": [
             {
@@ -799,7 +841,7 @@
         },
         {
           "gold_person": 2,
-          "your_person": 1,
+          "your_person": 2,
           "oks": 0.8657,
           "findings": [
             {
@@ -843,30 +885,56 @@
       "matches": [
         {
           "gold_person": 1,
-          "your_person": null,
-          "oks": 0.0,
+          "your_person": 2,
+          "oks": 0.9945,
           "findings": [
             {
-              "type": "thieu_nguoi",
-              "label": "Thiếu hẳn một người",
-              "detail": "Gold có skeleton này, bài của bạn không có."
+              "type": "gold_khong_gan_nhan",
+              "label": "Gold không gán khớp này",
+              "keypoint": "left_eye",
+              "detail": "Không bị trừ điểm: khớp gold có v=0 bị loại khỏi OKS. Xem mục lưu ý trong README."
+            },
+            {
+              "type": "gold_khong_gan_nhan",
+              "label": "Gold không gán khớp này",
+              "keypoint": "left_ear",
+              "detail": "Không bị trừ điểm: khớp gold có v=0 bị loại khỏi OKS. Xem mục lưu ý trong README."
+            },
+            {
+              "type": "co_khac_gold",
+              "label": "Cờ khác gold",
+              "keypoint": "right_hip",
+              "detail": "Vị trí đúng nhưng bạn ghi v=2, gold ghi v=1. Không trừ điểm OKS - nhưng nếu lệch hàng loạt thì guideline chưa thống nhất."
             }
           ]
         },
         {
           "gold_person": 2,
-          "your_person": null,
-          "oks": 0.0,
+          "your_person": 1,
+          "oks": 0.9858,
           "findings": [
             {
-              "type": "thieu_nguoi",
-              "label": "Thiếu hẳn một người",
-              "detail": "Gold có skeleton này, bài của bạn không có."
+              "type": "co_khac_gold",
+              "label": "Cờ khác gold",
+              "keypoint": "nose",
+              "detail": "Vị trí đúng nhưng bạn ghi v=2, gold ghi v=1. Không trừ điểm OKS - nhưng nếu lệch hàng loạt thì guideline chưa thống nhất."
+            },
+            {
+              "type": "gold_khong_gan_nhan",
+              "label": "Gold không gán khớp này",
+              "keypoint": "left_eye",
+              "detail": "Không bị trừ điểm: khớp gold có v=0 bị loại khỏi OKS. Xem mục lưu ý trong README."
+            },
+            {
+              "type": "gold_khong_gan_nhan",
+              "label": "Gold không gán khớp này",
+              "keypoint": "left_ear",
+              "detail": "Không bị trừ điểm: khớp gold có v=0 bị loại khỏi OKS. Xem mục lưu ý trong README."
             }
           ]
         }
       ],
-      "missing": 2,
+      "missing": 0,
       "extra": 0
     },
     {
@@ -874,18 +942,25 @@
       "matches": [
         {
           "gold_person": 1,
-          "your_person": null,
-          "oks": 0.0,
+          "your_person": 1,
+          "oks": 0.9361,
           "findings": [
             {
-              "type": "thieu_nguoi",
-              "label": "Thiếu hẳn một người",
-              "detail": "Gold có skeleton này, bài của bạn không có."
+              "type": "co_khac_gold",
+              "label": "Cờ khác gold",
+              "keypoint": "right_ear",
+              "detail": "Vị trí đúng nhưng bạn ghi v=2, gold ghi v=1. Không trừ điểm OKS - nhưng nếu lệch hàng loạt thì guideline chưa thống nhất."
+            },
+            {
+              "type": "lech_nhe",
+              "label": "Lệch nhẹ",
+              "keypoint": "right_hip",
+              "detail": "Lệch 46 px = 1.0 lần bán kính dung sai. Sửa được, ít hại."
             }
           ]
         }
       ],
-      "missing": 1,
+      "missing": 0,
       "extra": 0
     },
     {
@@ -893,18 +968,25 @@
       "matches": [
         {
           "gold_person": 1,
-          "your_person": null,
-          "oks": 0.0,
+          "your_person": 1,
+          "oks": 0.9392,
           "findings": [
             {
-              "type": "thieu_nguoi",
-              "label": "Thiếu hẳn một người",
-              "detail": "Gold có skeleton này, bài của bạn không có."
+              "type": "gold_khong_gan_nhan",
+              "label": "Gold không gán khớp này",
+              "keypoint": "right_ear",
+              "detail": "Không bị trừ điểm: khớp gold có v=0 bị loại khỏi OKS. Xem mục lưu ý trong README."
+            },
+            {
+              "type": "co_khac_gold",
+              "label": "Cờ khác gold",
+              "keypoint": "right_shoulder",
+              "detail": "Vị trí đúng nhưng bạn ghi v=1, gold ghi v=2. Không trừ điểm OKS - nhưng nếu lệch hàng loạt thì guideline chưa thống nhất."
             }
           ]
         }
       ],
-      "missing": 1,
+      "missing": 0,
       "extra": 0
     },
     {
@@ -912,30 +994,62 @@
       "matches": [
         {
           "gold_person": 1,
-          "your_person": null,
-          "oks": 0.0,
+          "your_person": 2,
+          "oks": 0.9647,
           "findings": [
             {
-              "type": "thieu_nguoi",
-              "label": "Thiếu hẳn một người",
-              "detail": "Gold có skeleton này, bài của bạn không có."
+              "type": "gold_khong_gan_nhan",
+              "label": "Gold không gán khớp này",
+              "keypoint": "left_eye",
+              "detail": "Không bị trừ điểm: khớp gold có v=0 bị loại khỏi OKS. Xem mục lưu ý trong README."
+            },
+            {
+              "type": "gold_khong_gan_nhan",
+              "label": "Gold không gán khớp này",
+              "keypoint": "left_ear",
+              "detail": "Không bị trừ điểm: khớp gold có v=0 bị loại khỏi OKS. Xem mục lưu ý trong README."
             }
           ]
         },
         {
           "gold_person": 2,
-          "your_person": null,
-          "oks": 0.0,
+          "your_person": 1,
+          "oks": 0.9749,
           "findings": [
             {
-              "type": "thieu_nguoi",
-              "label": "Thiếu hẳn một người",
-              "detail": "Gold có skeleton này, bài của bạn không có."
+              "type": "gold_khong_gan_nhan",
+              "label": "Gold không gán khớp này",
+              "keypoint": "nose",
+              "detail": "Không bị trừ điểm: khớp gold có v=0 bị loại khỏi OKS. Xem mục lưu ý trong README."
+            },
+            {
+              "type": "gold_khong_gan_nhan",
+              "label": "Gold không gán khớp này",
+              "keypoint": "left_eye",
+              "detail": "Không bị trừ điểm: khớp gold có v=0 bị loại khỏi OKS. Xem mục lưu ý trong README."
+            },
+            {
+              "type": "gold_khong_gan_nhan",
+              "label": "Gold không gán khớp này",
+              "keypoint": "right_eye",
+              "detail": "Không bị trừ điểm: khớp gold có v=0 bị loại khỏi OKS. Xem mục lưu ý trong README."
+            },
+            {
+              "type": "co_khac_gold",
+              "label": "Cờ khác gold",
+              "keypoint": "right_ear",
+              "detail": "Vị trí đúng nhưng bạn ghi v=1, gold ghi v=2. Không trừ điểm OKS - nhưng nếu lệch hàng loạt thì guideline chưa thống nhất."
+            },
+            {
+              "type": "co_khac_gold",
+              "label": "Cờ khác gold",
+              "keypoint": "right_wrist",
+              "detail": "Vị trí đúng nhưng bạn ghi v=2, gold ghi v=1. Không trừ điểm OKS - nhưng nếu lệch hàng loạt thì guideline chưa thống nhất."
             }
           ]
         }
       ],
-      "missing": 2,
+      "missing": 0,
       "extra": 0
     },
     {
@@ -943,18 +1057,49 @@
       "matches": [
         {
           "gold_person": 1,
-          "your_person": null,
-          "oks": 0.0,
+          "your_person": 1,
+          "oks": 0.9532,
           "findings": [
             {
-              "type": "thieu_nguoi",
-              "label": "Thiếu hẳn một người",
-              "detail": "Gold có skeleton này, bài của bạn không có."
+              "type": "gold_khong_gan_nhan",
+              "label": "Gold không gán khớp này",
+              "keypoint": "left_ear",
+              "detail": "Không bị trừ điểm: khớp gold có v=0 bị loại khỏi OKS. Xem mục lưu ý trong README."
+            },
+            {
+              "type": "co_khac_gold",
+              "label": "Cờ khác gold",
+              "keypoint": "right_ear",
+              "detail": "Vị trí đúng nhưng bạn ghi v=1, gold ghi v=2. Không trừ điểm OKS - nhưng nếu lệch hàng loạt thì guideline chưa thống nhất."
+            },
+            {
+              "type": "gold_khong_gan_nhan",
+              "label": "Gold không gán khớp này",
+              "keypoint": "left_wrist",
+              "detail": "Không bị trừ điểm: khớp gold có v=0 bị loại khỏi OKS. Xem mục lưu ý trong README."
+            },
+            {
+              "type": "co_khac_gold",
+              "label": "Cờ khác gold",
+              "keypoint": "right_wrist",
+              "detail": "Vị trí đúng nhưng bạn ghi v=1, gold ghi v=2. Không trừ điểm OKS - nhưng nếu lệch hàng loạt thì guideline chưa thống nhất."
+            },
+            {
+              "type": "gold_khong_gan_nhan",
+              "label": "Gold không gán khớp này",
+              "keypoint": "left_knee",
+              "detail": "Không bị trừ điểm: khớp gold có v=0 bị loại khỏi OKS. Xem mục lưu ý trong README."
+            },
+            {
+              "type": "gold_khong_gan_nhan",
+              "label": "Gold không gán khớp này",
+              "keypoint": "left_ankle",
+              "detail": "Không bị trừ điểm: khớp gold có v=0 bị loại khỏi OKS. Xem mục lưu ý trong README."
             }
           ]
         }
       ],
-      "missing": 1,
+      "missing": 0,
       "extra": 0
     }
   ]
